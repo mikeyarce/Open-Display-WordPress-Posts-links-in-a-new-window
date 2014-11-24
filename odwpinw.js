@@ -1,0 +1,1 @@
+jQuery(".jetpack-display-remote-posts a").attr("target","_blank");
