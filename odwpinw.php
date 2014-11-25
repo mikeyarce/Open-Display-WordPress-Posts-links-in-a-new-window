@@ -14,9 +14,8 @@
 /**
  * Adds the Javascript for opening Display WordPress Posts links in a new window
  */
-
 function odwpinw_scripts() {
-	wp_enqueue_script( 'dwpoinw', '/wp-content/plugins/open-dwp-in-new-window/odwpinw.js', array('jquery'), '1.0.0', true );
+	wp_enqueue_script( 'dwpoinw', plugins_url( 'odwpinw.js', __FILE__ ), array('jquery'), '1.0.0', true );
 }
 
 add_action( 'wp_enqueue_scripts', 'odwpinw_scripts' );
