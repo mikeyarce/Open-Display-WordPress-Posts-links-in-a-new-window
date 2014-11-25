@@ -16,7 +16,9 @@
  */
 
 function odwpinw_scripts() {
-	wp_enqueue_script( 'dwpoinw', '/wp-content/plugins/open-dwp-in-new-window/odwpinw.js', array('jquery'), '1.0.0', true );
+	if ( is_active_widget( false, false, 'jetpack_display_posts_widget' ) ) {
+		wp_enqueue_script( 'dwpoinw', '/wp-content/plugins/open-dwp-in-new-window/odwpinw.js', array('jquery'), '1.0.0', true );
+	}
 }
 
 add_action( 'wp_enqueue_scripts', 'odwpinw_scripts' );
