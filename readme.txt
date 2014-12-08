@@ -1,5 +1,5 @@
 === Open DWP Links in a New Window ===
-Contributors: mikeyarce
+Contributors: mikeyarce, jeherve
 Tested up to: 4.0.1
 Requires at least: 3.8
 Stable tag: 0.1
